@@ -9,45 +9,39 @@
 
     }
   </style>
+  <style>
+ a {
+   color: black;
+   text-decoration: none;
+ }
+ h1 {
+   font-size: 250%; text-align: center;
+ }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="colors.js">
+   </script>
 </head>
 <body>
   <h1><a href="index.html">유희왕</a></h1>
   <ol>
-   <li><a href="1.html">1.유희왕의 종류</a> </li>
-   <li><a href="2.html">2.유희왕은무엇인가</a></li>
-   <li><a href="3.html">3.유희왕마스터듀얼</a></li>
+   <li><a href="1.html">유희왕의 종류</a> </li>
+   <li><a href="2.html">유희왕은무엇인가</a></li>
+   <li><a href="3.html">유희왕마스터듀얼</a></li>
+   <li><a href="ex3.html">홈으로</a></li>
   </ol>
+<!--
+   <h1><a href="index.html">유희왕</a></h1>
+     <ol>
+   <li><a href="1.html"><font color="green">유희왕의 종류</font></a> </li>
+   <li><a href="2.html"><font color="green">유희왕은무엇인가</font></a></li>
+   <li><a href="3.html"><font color="green">유희왕마스터듀얼</font></a></li>
+   <li><a href="ex3.html"><font color="green">홈으로</font></a></li>
+  </ol>
+-->
   <input type="button" name="" value="night" onclick="
-  var target =  document.querySelector('body');
-  if (this.value === 'night')
-  {
-  target.style.backgroundColor = 'black';
-  target.style.color = 'white';
-  this.value = 'day';
-
-  var alist = document.querySelectorAll('a');
-var i=0;
-while(i < alist.length){
-console.log(alist[i]);
-    alist[i].style.color ='powderblue';
-    i=i +1;   }
-
-  } else {
-  target.style.backgroundColor = 'white';
-  target.style.color = 'black';
-  this.value = 'night';
-
-  var alist = document.querySelectorAll('a');
-var i=0;
-while(i < alist.length){
-console.log(alist[i]);
-    alist[i].style.color ='blue';
-    i=i +1;   }
-
-
-}
+    nightdayhandler(this);
   ">
-
 
   <h2 style="background-color:brown;color:powderblue">유희왕마스터듀얼</h2>
 <p>겨울 출시라는 사실만 밝힌 채 사전 공지 없이 2022년 1월 19일에 갑자기 출시되었다.
